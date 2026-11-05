@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextLevel Studio — Digital Products</title>
+<style>
+* {box-sizing:border-box;margin:0;padding:0}
+body {
+  font-family:Arial,sans-serif;
+  background:#101010;color:#f5f1e9;
+}
+header {
+  padding:24px 8%;
+  display:flex;justify-content:space-between;
+  align-items:center;border-bottom:1px solid #292929;
+}
+.logo {font-size:22px;font-weight:800;letter-spacing:1px}
+.logo span {color:#c9aa78}
+nav a {color:#ddd;text-decoration:none;margin-left:24px;font-size:14px}
+.hero {
+  text-align:center;padding:110px 20px 90px;
+  background:radial-gradient(ellipse at top,#353027,#101010 65%);
+}
+.tag {
+  color:#d7b987;border:1px solid #705e43;
+  border-radius:30px;padding:9px 15px;
+  display:inline-block;font-size:12px;
+}
+h1 {font-size:clamp(42px,7vw,76px);margin:28px 0 18px}
+h1 span {color:#c9aa78}
+.hero p {color:#aaa;max-width:560px;margin:auto;line-height:1.8}
+.btn {
+  display:inline-block;margin-top:30px;
+  padding:15px 26px;background:#c9aa78;
+  color:#151515;text-decoration:none;
+  border-radius:5px;font-weight:bold;
+}
+section {padding:75px 8%}
+.section-title {font-size:34px;margin-bottom:12px}
+.subtitle {color:#999;margin-bottom:35px;line-height:1.7}
+.products {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+}
+.card {
+  background:#1b1b1b;border:1px solid #303030;
+  border-radius:10px;overflow:hidden;
+}
+.preview {
+  height:180px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#39352d,#171717);
+  color:#d7bd91;font-size:23px;font-weight:bold;
+}
+.card-content {padding:22px}
+.card h3 {margin-bottom:10px}
+.card p {color:#999;font-size:14px;line-height:1.6}
+.price {color:#d7bd91;font-size:20px;margin-top:18px}
+.status {font-size:11px;color:#aaa;margin-top:12px}
+.about {
+  background:#1a1a1a;text-align:center;
+}
+.about p {max-width:650px;margin:20px auto;color:#aaa;line-height:1.9}
+.features {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;margin-top:35px;
+}
+.feature {
+  padding:24px;background:#202020;border-radius:8px;
+}
+.feature h3 {margin-bottom:10px;color:#d7bd91}
+.feature p {color:#aaa;font-size:14px;line-height:1.6}
+footer {
+  padding:35px 8%;text-align:center;
+  color:#777;border-top:1px solid #292929;
+  font-size:13px;line-height:2;
+}
+@media(max-width:600px){
+ header {padding:20px 5%}
+ nav a {margin-left:10px;font-size:12px}
+ section {padding:55px 6%}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">NEXTLEVEL <span>STUDIO.</span></div>
+  <nav>
+    <a href="#produits">Produits</a>
+    <a href="#apropos">À propos</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <span class="tag">DIGITAL PRODUCTS · EST. 2026</span>
+  <h1>Take your life<br><span>to the next level.</span></h1>
+  <p>
+    Des outils numériques élégants et pratiques
+    pour organiser ta vie, développer tes projets
+    et atteindre tes objectifs.
+  </p>
+  <a href="#produits" class="btn">Découvrir nos produits →</a>
+</section>
+
+<section id="produits">
+  <h2 class="section-title">Nos produits.</h2>
+  <p class="subtitle">
+    Des outils simples pour t'aider à aller plus loin.
+  </p>
+
+  <div class="products">
+    <article class="card">
+      <div class="preview">STUDENT OS.</div>
+      <div class="card-content">
+        <h3>Student Dashboard</h3>
+        <p>Organise tes devoirs, tes examens,
+        ton emploi du temps et tes objectifs.</p>
+        <div class="price">7 €</div>
+        <div class="status">Bientôt disponible</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="preview">MONEY TRACKER.</div>
+      <div class="card-content">
+        <h3>Budget Tracker</h3>
+        <p>Visualise tes dépenses, tes économies
+        et tes objectifs financiers.</p>
+        <div class="price">5 €</div>
+        <div class="status">Bientôt disponible</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="preview">PRODUCTIVITY.</div>
+      <div class="card-content">
+        <h3>Productivity Planner</h3>
+        <p>Organise tes journées et construis
+        de meilleures habitudes.</p>
+        <div class="price">9 €</div>
+        <div class="status">Bientôt disponible</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <h2 class="section-title">Our mission.</h2>
+  <p>
+    NextLevel Studio est une marque de produits
+    numériques conçus pour rendre l'organisation
+    plus simple, plus claire et plus efficace.
+    Notre ambition : aider chacun à progresser.
+  </p>
+  <div class="features">
+    <div class="feature">
+      <h3>Simple</h3>
+      <p>Des outils faciles à utiliser.</p>
+    </div>
+    <div class="feature">
+      <h3>Digital</h3>
+      <p>Des produits accessibles en ligne.</p>
+    </div>
+    <div class="feature">
+      <h3>Pratique</h3>
+      <p>Des solutions pensées pour le quotidien.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">NEXTLEVEL <span>STUDIO.</span></div>
+  <p>© 2026 NextLevel Studio. Tous droits réservés.</p>
+  <p>Boutique en préparation — aucun achat disponible pour le moment.</p>
+</footer>
+
+</body>
+</html>
